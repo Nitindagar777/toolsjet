@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Home } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Header';
 import ToolGrid from './components/ToolGrid';
 import WordCounter from './components/tools/WordCounter';
@@ -292,6 +293,9 @@ function App() {
           </div>
         </div>
       </footer>
+      
+      {/* Vercel Analytics */}
+      <Analytics />
     </div>
   );
 }
